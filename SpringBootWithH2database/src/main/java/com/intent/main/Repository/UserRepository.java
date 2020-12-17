@@ -1,9 +1,11 @@
-package com.intent.Repository;
+package com.intent.main.Repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.intent.model.User;
+import com.intent.main.model.User;
 
+@Repository
 public interface UserRepository extends JpaRepository<User,Long> {
 
 }
