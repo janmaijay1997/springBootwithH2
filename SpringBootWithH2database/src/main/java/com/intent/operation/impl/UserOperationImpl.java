@@ -42,6 +42,8 @@ public class UserOperationImpl implements UserOperation {
 		if (user.getAge() > 0) {
 			userView.setAge(user.getAge());
 		}
+		
+		
 		if (!ObjectUtils.isEmpty(user.getEmailId())) {
 			userView.setEmailId(user.getEmailId());
 		}
