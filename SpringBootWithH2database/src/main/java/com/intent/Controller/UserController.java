@@ -1,6 +1,7 @@
 package com.intent.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,5 +27,9 @@ public class UserController {
 	@PostMapping("/save")
 	public Response save(@RequestBody UserView userView) {
 		return userOperation.save(userView);
+	}
+	@GetMapping("/list")
+	public Response get() {
+		return userOperation.getList();
 	}
 }

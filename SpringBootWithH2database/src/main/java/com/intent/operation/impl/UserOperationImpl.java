@@ -59,4 +59,10 @@ public class UserOperationImpl implements UserOperation {
 		return new Response(200, "success", toView(userService.save(user)));
 	}
 
+	@Override
+	public Response getList() {
+		
+		return new Response(200, "success", userService.listUser());
+	}
+
 }

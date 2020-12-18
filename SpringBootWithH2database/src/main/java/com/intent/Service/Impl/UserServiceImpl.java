@@ -1,5 +1,7 @@
 package com.intent.Service.Impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +23,13 @@ public class UserServiceImpl implements UserService {
 	public User save(User user) {
 		 user=userRepo.save(user);
 		return user;
+	}
+
+	@Override
+	public List<User> listUser() {
+		
+		
+		return userRepo.findAll();
 	}
 
 }
