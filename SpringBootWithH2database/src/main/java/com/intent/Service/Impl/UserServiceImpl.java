@@ -3,9 +3,9 @@ package com.intent.Service.Impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.intent.Repository.UserRepository;
 import com.intent.Service.UserService;
-import com.intent.main.Repository.UserRepository;
-import com.intent.main.model.User;
+import com.intent.model.User;
 
 @Service
 public class UserServiceImpl implements UserService {

@@ -1,4 +1,4 @@
-package com.intent.main.model;
+package com.intent.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

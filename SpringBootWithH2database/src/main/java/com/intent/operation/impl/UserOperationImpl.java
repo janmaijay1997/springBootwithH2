@@ -8,7 +8,7 @@ import org.springframework.util.ObjectUtils;
 
 import com.intent.Response.Response;
 import com.intent.Service.UserService;
-import com.intent.main.model.User;
+import com.intent.model.User;
 import com.intent.operation.UserOperation;
 import com.intent.view.UserView;
 @Component

@@ -1,5 +1,5 @@
 package com.intent.Service;
-import com.intent.main.model.User;
+import com.intent.model.User;
 
 public interface UserService {
 	
